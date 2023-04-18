@@ -1,0 +1,26 @@
+<h1 style="color:brown">FORMULARIO PRODUCTOS</h1>
+<table border="2">
+  <tr><label>
+ Nombre Producto.
+  <input type="text" name="nombre" [(ngModel)]="p._nombre"required>
+</label>
+</tr>
+<br><br>
+<label>
+  Cantidad.
+  <input type="number" name="cantidad" [(ngModel)]="p._cantidad"required>
+</label><br><br>
+<label>
+  Precio
+  <input type="number" name="precio" [(ngModel)]="p._precio"required>
+</label><br><br>
+
+<label>Tipo de Producto</label>
+<select [(ngModel)]="p._tipo">
+    <option *ngFor="let t of tipoP" [value]="t">{{t}}</option>
+</select>
+<br>
+<br>
+<button (click)="agregarProducto()">Agregar</button><br>
+</table>
+<app-hijo-lista [productos]="producto"></app-hijo-lista>

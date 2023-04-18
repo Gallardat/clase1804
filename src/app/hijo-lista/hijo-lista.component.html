@@ -1,0 +1,21 @@
+<h3>Listado de productos:</h3>
+<table border="1" style="background-color: aqua;" >
+  <thead>
+    <tr>
+      <th>id</th>
+      <th>nombre</th>
+      <th>cantiadad</th>
+      <th>precio</th>
+      <th>Tipo de producto</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let datos of productos">
+    <td>{{datos._idProducto}}</td>
+    <td>{{datos._nombre}}</td>
+    <td>{{datos._cantidad}}</td>
+    <td>{{datos._precio}}</td>
+    <td>{{datos._tipo}}</td>
+  </tr>
+  </tbody>
+</table>

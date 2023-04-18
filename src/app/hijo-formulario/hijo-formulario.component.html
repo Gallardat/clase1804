@@ -1,0 +1,16 @@
+<h1 style="color:blue ">FORMULARIO DE PEDIDOS</h1>
+<table border="3">
+ NOMBRE DE CLIENTE
+ <label>
+  <input type="text" name="nombre" [(ngModel)]="pedidos._nombreCliente"required>
+</label><br><br>
+<label>
+  TOTAL DE PRODUCTOS
+  <input type="number" name="totalPoroducto" [(ngModel)]="pedidos._totalProducto"required>
+</label><br><br>
+<label>
+  iMPORTE TOTAL
+  <input type="number" name="totalImporte" [(ngModel)]="pedidos._importeTotal"required>
+</label><br><br>
+<button (click)="agregarPedido()">Agregar</button><br>
+</table>

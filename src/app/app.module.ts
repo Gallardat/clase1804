@@ -3,14 +3,24 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PadreFormularioComponent } from './padre-formulario/padre-formulario.component';
+import { HijoListaComponent } from './hijo-lista/hijo-lista.component';
+import { FormsModule } from '@angular/forms';
+import { PadreListaComponent } from './padre-lista/padre-lista.component';
+import { HijoFormularioComponent } from './hijo-formulario/hijo-formulario.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PadreFormularioComponent,
+    HijoListaComponent,
+    PadreListaComponent,
+    HijoFormularioComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

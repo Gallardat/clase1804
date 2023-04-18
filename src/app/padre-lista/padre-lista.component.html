@@ -1,0 +1,18 @@
+<app-hijo-formulario (datosPedido)="agregarPedido($event)"></app-hijo-formulario>
+<h2>LISTADO DE PEDIDO</h2>
+<table border="1">
+    <tr>
+        <th>IdPedido</th>
+        <th>IdCliente</th>
+        <th>Nombre del cliente</th>
+        <th>Total de productos</th>
+        <th>Importe Total</th>
+    </tr>
+    <tr *ngFor="let pedidos of datoPedido">
+        <td>{{pedidos._idPedido}}</td>
+        <td>{{pedidos._idCliente}}</td>
+        <td>{{pedidos._nombreCliente}}</td>
+        <td>{{pedidos._totalProducto}}</td>
+        <td>{{pedidos._importeTotal}}</td>
+    </tr>
+</table>
